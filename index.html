@@ -15,9 +15,17 @@
 	<style>
 		.myimage {
 			width: 600px;
-			height: 400px;
+			height: 500px;
 			display: block;
 			margin: auto;
+			border-radius: 20px;
+		}
+		.sqlimage {
+			width: 600px;
+			height: 500px;
+			display: block;
+			margin: auto;
+			border-radius: 20px;
 		}
 
 		#sqllogo {
@@ -98,9 +106,8 @@
 										<header class="major">
 											<h2>ABOUT ME</h2>
 										</header>
-										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
+										<p>안녕하십니까. 코딩을 배우는 윤한빈입니다. 지금까지 안했던 공부 또는 일은 있었어도 못했던 것은 없었습니다. 코딩을 하기로 하였으니 경험과 시간을 쌓아서 발전해서 잘해질 것입니다.</p>
+										<p>이 포트폴리오는 제가 시작한 프로젝트에 대한 내용이 주를 이루고 있으며 저의 커리어 또한 점점 쌓아갈 것입니다. 점점 늘려나가면서 저의 발전 과정을 써내려갈 것입니다. </p>
 										
 									</div>
 									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
@@ -187,7 +194,7 @@
 								</header>
 								<ul class="statistics">
 									<li class="style1">
-										<img class="myimage" src="sqlpro/0.png" name="sqlimg">
+										<img class="sqlimage" src="sqlpro/0.png" name="sqlimg">
 										<div id="jsdiv" class="jsdiv" name="jdiv">오라클 프로젝트 예시</div>
 										<input type="button" name="btn3" class="btn" value="<<">
 										<input type="button" name="btn4" class="btn" value=">>">
@@ -222,8 +229,15 @@
 										</table>
 									</div>
 								</div>
+								
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="generic1.html" class="button primary">eXERD 보러가기</a></li>
+										<!-- <li><a href="generic2.html" class="button">SQL 구문보기</a></li> -->
+									</ul>
+								</footer>
 							</section>
-							</section>
+							
 
 						<!-- Get Started -->
 							<section id="cta" class="main special">
@@ -234,8 +248,8 @@
 								</header>
 								<footer class="major">
 									<ul class="actions special">
-										<li><a href="generic.html" class="button primary">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
+										<li><a href="generic1.html" class="button primary">Get Started</a></li>
+										<li><a href="generic2.html" class="button">Learn More</a></li>
 									</ul>
 								</footer>
 							</section>
@@ -245,10 +259,11 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+							<h2>끝으로</h2>
+							<p>포트폴리오를 봐주셔서 감사합니다. <br>
+							궁금하시거나 연락이 필요하시면 오른쪽 정보를 이용해 주시길 바랍니다.</p>
 							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn More</a></li>
+								<!-- <li><a href="generic.html" class="button">Learn More</a></li> -->
 							</ul>
 						</section>
 						<section>
@@ -301,11 +316,6 @@
 					document.all.jimg.src = "javapro/" + n + '.png';
 				}
 			};
-			
-			// <img id="sqlimage" src="sqlpro/0.png" name="sqlimg">
-			// <div id="jdiv" class="jsdiv" name="jdiv">오라클 프로젝트 예시</div>
-			// <input type="button" name="btn3" class="btn" value="<<">
-			// <input type="button" name="btn4" class="btn" value=">>">
 
 			document.all.btn3.onclick = function () {
 				if (m > 0) {
